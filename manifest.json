@@ -1,0 +1,17 @@
+{
+    "name": "blitz",
+    "version": "1.0",
+    "description": "Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.",
+    "background_page": "background.html",
+    "page_action": {
+        "default_icon": "icon.png",
+        "default_title": "Blitz this page!",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [ "tabs", "cookies", "http://*/", "https://*/" ]
+}

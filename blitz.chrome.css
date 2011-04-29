@@ -1,0 +1,107 @@
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: url('http://blitz.io/fonts/League_Gothic-webfont.eot');
+	src: local('☺'), url('http://blitz.io/fonts/League_Gothic-webfont.woff') format('woff'), url('http://blitz.io/fonts/League_Gothic-webfont.ttf') format('truetype'), url('http://blitz.io/fonts/League_Gothic-webfont.svg#webfont1Lb5Pdit') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+div.code {
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: #333333;
+    -moz-box-shadow: 0 0 3px #333333;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font: 1em 'andale mono', 'lucida console', monospace;
+    line-height: 1.5;
+}
+a { color: #29abe2; text-decoration: none; }
+a:hover { color: #0071bc; text-decoration: underline; }
+a:active { outline: 1px dotted #ccc; }
+a:visited { color: #662d91; }
+body {
+	background: #262626;
+	color: #c9c9c9;
+	font-size: 0.875em;
+	line-height: 20px;
+    width: 480px;
+    height: 100px;
+    overflow-x:hidden;
+}
+select { background-color: #262626; color: #c9c9c9; }
+input { background-color: #1a1a1a; color: #b1d81c;  }
+.tab { display: none; }
+#message { line-height: 36px; }
+.icon-throbber {
+    background: url('http://blitz.io/images/throbber_small.gif') no-repeat top left transparent;
+    padding-left: 20px;
+}
+.icon-ok {
+    background: url('http://blitz.io/images/ico_result_ok_small.png') no-repeat top left transparent;
+    padding-left: 20px;
+}
+.icon-error {
+    background: url('http://blitz.io/images/ico_result_error_small.png') no-repeat top left transparent;
+    padding-left: 20px;
+}
+#signup { 
+    background: url('http://blitz.io/images/icon.png') no-repeat top left transparent;
+    padding-left: 20px;
+    color: #b1d81c;
+    border-bottom: 1px solid red;
+    margin-bottom: 10px;
+}
+div.login {
+    line-height: 36px;
+}
+#url { 
+    background: url('http://blitz.io/images/icon.png') no-repeat top left transparent;
+    font-weight: bold; 
+    color: #b1d81c;
+    padding-left: 20px;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    width: 95%;
+    border-bottom: 1px solid red;
+    margin-bottom: 10px;
+}
+#rush { display: none; }
+a.button, a.button span { display: block; }
+a.button {
+	float: right;
+	padding-left: 20px;
+	background: url('http://blitz.io/images/bg_button_left.png') no-repeat top left;
+	color: #fff;
+	font-family: 'LeagueGothicRegular';
+	font-size: 1.43em;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 38px;
+}
+a.button span {
+	height: 41px;
+	padding-right: 23px;
+	background: url('http://blitz.io/images/bg_button_right.png') no-repeat top right;
+}
+a.button:hover { background-position: 0 -41px; }
+a.button:hover span { background-position: 100% -41px; }
+a.button.disabled { background-position: 0 -82px; }
+a.button.disabled span { background-position: 100% -82px; }
+.keyword { font-weight: bold; color: #b1d81c !important; }
+a.extern {
+    background: url('http://blitz.io/images/extlink.gif') no-repeat scroll left center transparent;
+    padding-left: 16px;
+    color: #64B7E6;
+}
+form#run #options { line-height: 36px;}
+#results #progress { line-height: 36px; }
+#blitz { padding-bottom: 10px;}
+#blitz #hits { color: #00ff00; }
+#blitz #errors { color: #DD1122;}
+#blitz #timeouts { color: #E66C25; }
+#blitz a#advanced { color: #64B7E6; outline: none; text-decoration: none; }
+#blitz div#advanced { margin-left: 20px; display: none; }

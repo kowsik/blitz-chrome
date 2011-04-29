@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js">
+</script>
+<script type="text/javascript" src="blitz.chrome.js"></script>
+<link rel="stylesheet" href="blitz.chrome.css"/>
+</head>
+<body>
+    <div id="info">
+    </div>
+    <div class="tabs">
+        <div id="login" class="tab">
+            <div id="signup">Login to blitz.io</div>
+            <div class="login">
+                Sign-up to blitz.io so you can get blitzing!
+                <a id="login" class="button" target="_blank" href="http://blitz.io/login">
+                    <span>Login</span>
+                </a>
+            </div>
+            <span id="message"></span>
+        </div>
+        <div id="blitz" class="tab">
+            <div id="url"></div>
+            <form id="run">
+                <div id="options">
+                    <select id="mode">
+                        <option>sprint</option>
+                        <option>rush</option>
+                    </select>
+                    <span id="rush">
+                        <select id="users">
+                            <option>10</option>
+                            <option>100</option>
+                            <option>200</option>
+                            <option>400</option>
+                            <option>600</option>
+                            <option>800</option>
+                            <option>1000</option>
+                        </select>
+                        users in
+                        <select id="duration">
+                            <option>10</option>
+                            <option>30</option>
+                            <option>60</option>
+                        </select>
+                        seconds
+                    </span>
+                    from
+                    <select id="region">
+                        <option>california</option>
+                        <option>virginia</option>
+                        <option>ireland</option>
+                        <option>japan</option>
+                        <option>singapore</option>
+                    </select>
+                    <a href="#" id="run" class="button"><span>Run</span></a>
+                </div>
+                <div>
+                    <div><small id="arrow">&#9658;</small><a id="advanced" href="#">Advanced</a></div>
+                    <div id="advanced">
+                        <div id="cookies"></div>
+                    </div>
+                </div>                    
+            </form>
+            <div id="result">
+                <div id="status"></div>
+            </div>
+            <div id="results"></div>
+        </div>
+    </div>
+</body>
+</html>

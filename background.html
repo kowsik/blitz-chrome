@@ -1,0 +1,11 @@
+<html>
+<head>
+<script>
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+    if (/^(http|https)/.test(tab.url)) {
+        chrome.pageAction.show(tabId);        
+    }
+});
+</script>
+</head>
+</html>
