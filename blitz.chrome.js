@@ -109,6 +109,9 @@ $(function () {
         var html = [];
         _url = tab.url;
         _cookies = [];
+        
+        // Grab all the 'current' page cookies and present them so the user
+        // can select which cookies s/he wants as part of the sprinting/rushing
         chrome.cookies.getAll({ url: tab.url }, function (cookies) {
             cookies.sort(function (a, b) {
                 return b.name < a.name ? -1 : b.name > a.name ? 1 : 0;
@@ -137,6 +140,7 @@ $(function () {
         $('.tabs .tab#' + name).show();
     }
 
+    // Main API for running the tests (sprint or rush)
     var Test = (function () {
         var _timer, _job_in_q;
 

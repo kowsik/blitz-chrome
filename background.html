@@ -1,6 +1,9 @@
 <html>
 <head>
 <script>
+// This is invoked by Chrome each time the focus on the tab changes to
+// a new page. We simply check to see if the page is HTTP(s) as opposed to
+// chrome:// ftp:// and other URL's
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     if (/^(http|https)/.test(tab.url)) {
         chrome.pageAction.show(tabId);        
