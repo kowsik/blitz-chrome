@@ -28,6 +28,7 @@ var blitz = (function () {
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader("X-API-USER", user_id);
                     xhr.setRequestHeader("X-API-KEY", api_key);
+                    xhr.setRequestHeader("X-API-CLIENT", "chrome");
                 },
                 success: function (d) {
                     if (d.ok) {
@@ -53,6 +54,7 @@ var blitz = (function () {
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader("X-API-USER", user_id);
                     xhr.setRequestHeader("X-API-KEY", api_key);
+                    xhr.setRequestHeader("X-API-CLIENT", "chrome");
                 },
                 cache: false,
                 data: JSON.stringify(test),
@@ -68,6 +70,7 @@ var blitz = (function () {
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader("X-API-USER", user_id);
                     xhr.setRequestHeader("X-API-KEY", api_key);
+                    xhr.setRequestHeader("X-API-CLIENT", "chrome");
                 },
                 cache: false,
                 success: function (data) {
@@ -83,6 +86,7 @@ var blitz = (function () {
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader("X-API-USER", user_id);
                     xhr.setRequestHeader("X-API-KEY", api_key);
+                    xhr.setRequestHeader("X-API-CLIENT", "chrome");
                 },
                 cache: false
             });
