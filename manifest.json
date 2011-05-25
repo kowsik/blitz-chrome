@@ -1,6 +1,6 @@
 {
     "name": "blitz",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.",
     "background_page": "background.html",
     "page_action": {
